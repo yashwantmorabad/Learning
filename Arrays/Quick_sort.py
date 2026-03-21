@@ -16,7 +16,7 @@ def partiton(nums,low,high):
     nums[low],nums[j]=nums[j],nums[low]
     return j
 
-def q_sort(nums,low,high):
+def q_sort(nums,low,high):   
     if low<high:
         p_index=partiton(nums,low,high)
         q_sort(nums,low,p_index-1)
