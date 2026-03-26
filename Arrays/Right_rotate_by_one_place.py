@@ -8,7 +8,7 @@ for i in range(0,k):
     n[0]=temp
 print(n)
 #Optimal Approach
-n=[1,2,3,4,5,6,7,8,9,10]
-k=2
-n=n[len(n)-k:]+n[:len(n)-k]
-print(n)
+# n=[1,2,3,4,5,6,7,8,9,10]
+# k=2
+# n=n[len(n)-k:]+n[:len(n)-k]
+# print(n)
