@@ -1,5 +1,6 @@
 '''I have converted this display function in SLL_Creation
-due to get a correct output in this code'''
+due to get a correct output in this code, Here traversal
+and display are same'''
 from SLL_Creation import Node,List 
 ll = List()
 ll.append(10)
