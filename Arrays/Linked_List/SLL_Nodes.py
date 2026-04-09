@@ -18,3 +18,10 @@ def get_length(ll):
         
     return count
 print(get_length(ll))
+
+def get_length_recursive(node):
+    if not node:
+        return 0
+    return 1 + get_length_recursive(node.next)
+curr=ll.head
+print(get_length_recursive(curr))
