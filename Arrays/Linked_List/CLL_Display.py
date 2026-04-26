@@ -1,3 +1,4 @@
+"Display by converting into string"
 def display(self):
     nodes = []
     if self.head:
@@ -7,7 +8,7 @@ def display(self):
             curr = curr.next
             if curr == self.head: break
     print(" -> ".join(nodes) + " -> (Head)") 
-
+"Display without converting into string"
 def display_simple(self):
     temp = self.head
     if self.head is not None:
@@ -16,7 +17,7 @@ def display_simple(self):
             temp = temp.next
             if temp == self.head:
                 break
-    
+"Display using tail"
 def display_simple(self):
         if not self.tail:
             print("List is empty")
