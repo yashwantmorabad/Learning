@@ -78,9 +78,9 @@ class CircularLinkedListOptimized:
                 break
         print("Head")
 cll = CircularLinkedListOptimized()
-cll.insert_at_end(10)   # 10 -> (Head)
-cll.insert_at_end(20)   # 10 -> 20 -> (Head)
-cll.insert_at_start(5)  # 0 -> 10 -> 20 -> (Head)
+cll.insert_at_end(10)    
+cll.insert_at_end(20)  
+cll.insert_at_start(5) 
 cll.insert_at_pos(1,0)
 cll.display_simple()
 
