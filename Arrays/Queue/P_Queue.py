@@ -40,7 +40,7 @@ pq.push("Submit Assignment", 2)
 pq.push("Pay Rent", 1)         # Highest priority (lowest number)
 pq.push("Watch Movie", 5)
 pq.push("Fix Bug", 2)          # Same priority as assignment
-
+pq.display()
 print("\nProcessing Tasks:")
 while not pq.is_empty():
     print(f"Processing: {pq.pop()}")
