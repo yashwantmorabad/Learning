@@ -1,8 +1,5 @@
-from ast import arg
 import functools
 from collections import deque
-from hmac import new
-from unittest import result
 
 def trace_operation(func):
     "A decorator that logs the execution of tree operations"
