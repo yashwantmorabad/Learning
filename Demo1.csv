@@ -1,0 +1,13 @@
+Employee_ID,Name,Department,Age,Salary,Join_Date,Performance_Rating,Remote_Work,City
+101,Alice Smith,IT,29.0,"$85,000.50",2021-05-15,4.0,True,New York
+102,Bob Johnson,HR,35.0,"$75,000.00",2019-11-20,3.0,False,Chicago
+103,Charlie Brown,IT,42.0,"$95,000.00",05/15/2018,5.0,True,New York
+104,Diana Prince,Sales,28.0,"$72,000.00",2022-01-10,2.0,True,Los Angeles
+105,Evan Wright,Marketing,,"$68,000.00",10/25/2021,4.0,False,Chicago
+106,Fiona Gallagher,IT,31.0,"$88,000.00",2020-03-05,3.0,True,New York
+107,George Costanza,Sales,45.0,"$91,000.00",2017-08-30,5.0,False,Los Angeles
+108,Hermione Granger,HR,26.0,"$65,000.00",2023-02-14,4.0,True,Chicago
+109,Ian Malcolm,Marketing,38.0,"$79,000.00",,3.0,False,Seattle
+110,Jane Doe,IT,29.0,"$85,000.50",2021-05-15,4.0,True,New York
+111,Kevin Hart,Sales,33.0,"$75,000.00",06/12/2019,,False,Seattle
+112,Laura Croft,Marketing,41.0,"$82,500.00",2016-09-01,5.0,True,Boston
