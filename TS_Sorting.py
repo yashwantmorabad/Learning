@@ -68,3 +68,17 @@ top_3=combined_df.nlargest(3,'Salary')
 print(top_3)
 youngest_3=combined_df.nsmallest(3,'Age')
 print(youngest_3)
+
+#Resampling
+#Count the number of employees hired each year
+print(combined_df.set_index('Date').resample('Y')['Employee_ID'].count())
+
+#Calculate the average salary of employees hired each year
+print(combined_df.set_index('Date').resample('Y')['Salary'].mean())
+
+#Rolling calculations
+print(combined_df['Salary'].rolling(window=3).mean())
+
+#shift operations and difference calculations
+print(combined_df['Salary'].shift(1))
+print(combined_df['Salary'].diff())
