@@ -71,11 +71,12 @@ print(youngest_3)
 
 #Resampling
 #Count the number of employees hired each year
-print(combined_df.set_index('Date').resample('Y')['Employee_ID'].count())
+print(combined_df.set_index('Date').resample('YE')['Employee_ID'].count())
 
 #Calculate the average salary of employees hired each year
-print(combined_df.set_index('Date').resample('Y')['Salary'].mean())
+print(combined_df.set_index('Date').resample('YE')['Salary'].mean())
 
+df_time = combined_df.sort_values('Date').set_index('Date')
 #Rolling calculations
 print(combined_df['Salary'].rolling(window=3).mean())
 
