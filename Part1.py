@@ -9,8 +9,8 @@ dev_y=[38496,42000,46752,49320,53200,
 py_dev_y = [45372, 48876, 53850, 57287, 63016,
             65998, 70003, 70000, 71496, 75370, 83640]
 
-plt.plot(age_x, dev_y,label="All Devs")
-plt.plot(age_x, py_dev_y,label="Python")
+plt.plot(age_x, dev_y,color='lightgreen',linestyle='-',marker='.',label="All Devs")
+plt.plot(age_x, py_dev_y,color='k',linestyle='--',marker='.',label="Python")
 plt.legend() # legend uesd to show the label
 plt.title("Median Salaries by Age")
 plt.xlabel("Age")
