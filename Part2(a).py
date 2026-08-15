@@ -1,11 +1,28 @@
+#Bar Chart
 from matplotlib import pyplot as plt
 import numpy as np
 from Pandas import data
-
-Dept_Salary=data.groupby('Department')['Salary'].sum()
+width=0.5
+Dept_Salary=data.groupby('Department')[['Salary','Bonus']].mean()
+x = np.arange(len(Dept_Salary.index))
 plt.style.use('fivethirtyeight')
 colors=['lightblue','lightgreen','lightcoral','lightsalmon','lightskyblue']
-plt.bar(Dept_Salary.index,Dept_Salary.values,color=colors)
+plt.bar(
+    x - width/2,
+    Dept_Salary['Salary'],
+    width=width,
+    label='Salary',
+    color='lightblue'
+)
+
+plt.bar(
+    x + width/2,
+    Dept_Salary['Bonus'],
+    width=width,
+    label='Bonus',
+    color='lightgreen'
+)
+plt.xticks(x, Dept_Salary.index)
 plt.title("Salary Count by Department")
 plt.xlabel("Department")
 plt.ylabel("Salary")
