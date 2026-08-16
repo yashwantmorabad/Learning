@@ -14,4 +14,4 @@ def clean_data(df):
 
 data=clean_data(df)
 department_counts = df.groupby('Department')['Employee_ID'].count()
-print(department_counts)
+# print(department_counts)
