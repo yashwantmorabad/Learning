@@ -2,7 +2,7 @@
 from matplotlib import pyplot as plt
 import numpy as np
 from Pandas import data
-width=0.5
+width=0.35
 Dept_Salary=data.groupby('Department')[['Salary','Bonus']].mean()
 x = np.arange(len(Dept_Salary.index))
 plt.style.use('fivethirtyeight')
