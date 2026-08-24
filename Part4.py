@@ -11,6 +11,6 @@ df = pd.DataFrame({'A': [1, 2, 3, 4, 5],
 # Create a stacked bar chart
 plt.style.use('fivethirtyeight')
 fig, ax = plt.subplots()
-ax.stackplot(df.index, df['A'], df['B'], df['C'], labels=['A', 'B', 'C'])
+ax.stackplot(df.index, df['A'], df['B'], df['C'],alpha=0.75,labels=['A', 'B', 'C'])
 ax.legend() 
 plt.show() 
